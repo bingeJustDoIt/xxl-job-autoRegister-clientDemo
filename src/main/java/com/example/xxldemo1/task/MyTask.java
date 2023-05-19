@@ -16,19 +16,4 @@ public class MyTask {
     public void testJob() {
         log.info("hello world");
     }
-
-
-//    @XxlJob(value = "testJob222")
-//    @XxlRegister(cron = "59 1-2 0 * * ?",
-//            triggerStatus = 1)
-//    public void testJob2(){
-//        System.out.println("#作者：Hydra");
-//    }
-//
-//    @XxlJob(value = "testJob444")
-//    @XxlRegister(cron = "59 59 23 * * ?")
-//    public void testJob4(){
-//        System.out.println("hello xxl job");
-//    }
-
 }
