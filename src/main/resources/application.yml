@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+# Xxl-job 配置
+xxl:
+  job:
+    admin:
+      # admin地址 目前仅支持单点
+      addresses: http://localhost:8081/xxl-job-admin
+      # admin 账号密码 用于拿到cookie方便后续的自动注册
+      username: admin
+      password: 123456
+    # admin token
+    accessToken: default_token
+    executor:
+      # 本实例对应的执行器AppName 用于多实例部署
+      appName: xxl-test-executor
+      # 本实例对应的执行器Title 区分本实例和其他实例 建议加上本实例的端口以进行区分
+      title: 示例执行器
